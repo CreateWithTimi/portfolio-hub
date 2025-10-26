@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create With Timi - Portfolio</title>
+    <meta
+      name="description"
+      content="Creative portfolio showcasing UI/UX design, Rive animations, and frontend development work by Timi. Explore innovative digital experiences and get in touch for collaborations."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- App Wrapper (all content must be inside .app) -->
+    <div class="app">
+      <!-- Hidden Theme Toggle Checkbox (manual theme control) -->
+      <input
+        type="checkbox"
+        id="theme-toggle"
+        class="theme-toggle"
+        aria-label="Toggle dark mode"
+      />
+      <!-- Sticky Navigation -->
+      <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#" class="logo">Create With Timi</a>
+              <div class="nav-right">
+                <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+                <label
+                  for="theme-toggle"
+                  class="theme-toggle-label"
+                  data-testid="button-theme-toggle"
+                >
+                  <svg
+                    class="theme-icon sun-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v2" />
+                    <path d="M12 20v2" />
+                    <path d="m4.93 4.93 1.41 1.41" />
+                    <path d="m17.66 17.66 1.41 1.41" />
+                    <path d="M2 12h2" />
+                    <path d="M20 12h2" />
+                    <path d="m6.34 17.66-1.41 1.41" />
+                    <path d="m19.07 4.93-1.41 1.41" />
+                  </svg>
+                  <svg
+                    class="theme-icon moon-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                  </svg>
+                  <span class="sr-only">Toggle theme</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Hero Section -->
+        <section class="hero section">
+          <div class="container">
+            <div class="hero-grid">
+              <!-- Left Container - Text Content -->
+              <div class="hero-content">
+                <h1 class="hero-title">
+                  Building Digital Experiences That Inspire
+                </h1>
+                <p class="hero-description">
+                  I'm a creative designer and frontend developer passionate
+                  about crafting beautiful, interactive experiences through
+                  UI/UX design, Rive animations, and modern web development.
+                </p>
+                <a href="#projects" class="btn btn-primary">See My Work</a>
+              </div>
+
+              <!-- Right Container - Image/Interactive Game -->
+              <div class="hero-interactive">
+                <div class="interactive-placeholder">
+                  <div class="placeholder-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="64"
+                      height="64"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                      <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                      <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                      <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                      <path
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="placeholder-text">
+                    Interactive element placeholder
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section" aria-label="About section">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">About Me</h2>
+              <p class="section-description">
+                I'm a multidisciplinary creative professional specializing in
+                UI/UX design, interactive animations, and frontend development.
+                With a passion for creating memorable digital experiences, I
+                combine design thinking with technical expertise to build
+                products that users love.
+              </p>
+            </div>
+
+            <div class="grid grid-3" role="list">
+              <!-- Highlight Card 1 -->
+              <article class="highlight-card" role="listitem">
+                <div class="card-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                  </svg>
+                </div>
+                <h3 class="card-title">UI/UX Design</h3>
+                <p class="card-description">
+                  Creating intuitive and visually stunning user interfaces that
+                  delight users and drive engagement.
+                </p>
+              </article>
+
+              <!-- Highlight Card 2 -->
+              <article class="highlight-card" role="listitem">
+                <div class="card-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                  </svg>
+                </div>
+                <h3 class="card-title">Rive Animation</h3>
+                <p class="card-description">
+                  Bringing designs to life with interactive animations that
+                  enhance user experience and storytelling.
+                </p>
+              </article>
+
+              <!-- Highlight Card 3 -->
+              <article class="highlight-card" role="listitem">
+                <div class="card-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </div>
+                <h3 class="card-title">Frontend Development</h3>
+                <p class="card-description">
+                  Building responsive, performant web applications using modern
+                  technologies and best practices.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section
+          id="projects"
+          class="projects section"
+          aria-label="Projects section"
+        >
+          <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="projects-subtitle">
+              A selection of recent work showcasing my design and development
+              capabilities
+            </p>
+
+            <div class="grid grid-3" role="list">
+              <!-- Project Card 1 -->
+              <article class="project-card" role="listitem">
+                <div class="project-image">
+                  <span class="project-placeholder">E</span>
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">E-Commerce Redesign</h3>
+                  <p class="project-description">
+                    A complete redesign of an e-commerce platform focusing on
+                    improved user flow and conversion rates with modern UI
+                    patterns.
+                  </p>
+                  <a href="#" class="btn btn-ghost">
+                    View Project
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project Card 2 -->
+              <article class="project-card" role="listitem">
+                <div class="project-image">
+                  <span class="project-placeholder">I</span>
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">Interactive Portfolio</h3>
+                  <p class="project-description">
+                    An animated portfolio website featuring Rive animations and
+                    smooth interactions that showcase creative work dynamically.
+                  </p>
+                  <a href="#" class="btn btn-ghost">
+                    View Project
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project Card 3 -->
+              <article class="project-card" role="listitem">
+                <div class="project-image">
+                  <span class="project-placeholder">S</span>
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">SaaS Dashboard</h3>
+                  <p class="project-description">
+                    A comprehensive dashboard for a SaaS product with data
+                    visualization, responsive design, and intuitive navigation.
+                  </p>
+                  <a href="#" class="btn btn-ghost">
+                    View Project
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section
+          id="contact"
+          class="contact section"
+          aria-label="Contact section"
+        >
+          <div class="container">
+            <div class="contact-wrapper">
+              <h2 class="section-title">Get In Touch</h2>
+              <p class="contact-subtitle">
+                Have a project in mind? Let's collaborate and create something
+                amazing together.
+              </p>
+
+              <form class="contact-form" aria-label="Contact form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell me about your project..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <p class="footer-text">
+            &copy; 2025 Create With Timi. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
